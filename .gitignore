@@ -1,0 +1,11 @@
+# Python files and directories to ignore
+__pycache__/
+
+# Mac os files
+.DS_Store
+
+# Visual Studio code files
+.vscode/
+
+# local environment variables
+.env
