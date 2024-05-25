@@ -7,11 +7,9 @@ set envFilePath to currentDir & "/.env"
 -- Command to source the .env file and set:
 -- >> path to the Python script to execute 
 -- >> path to the Python interpreter on the machine
-set shellCommandToGetPythonFileName to "source " & quoted form of envFilePath & "; echo $PYTHON_SCRIPT_PATH"
 set shellCommandToGetPythonInterpreterPath to "source " & quoted form of envFilePath & "; echo $PYTHON_INTERPRETER_PATH" 
-set pythonFileName to do shell script shellCommandToGetPythonFileName
 set pythonInterpreter to do shell script shellCommandToGetPythonInterpreterPath
-set pythonScriptPath to currentDir & "/" & pythonFileName
+set pythonScriptPath to currentDir & "/" & "replace_clipboard_text.py"
 
 -- Get the current contents of the clipboard
 set clipboardContents to the clipboard as text

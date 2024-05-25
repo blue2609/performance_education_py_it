@@ -2,7 +2,7 @@
 
 # Previous clipboard content
 previous_content=""
-
+source ".env"
 
 while true; do
     # Get the current clipboard content
@@ -11,7 +11,7 @@ while true; do
     # Check if the clipboard content has changed
     if [ "$current_content" != "$previous_content" ]; then
         # Run the Automator Quick Action
-        automator -i "$current_content" "/Users/admin/Library/Services/replace_clipboard_on_copy.workflow"
+        automator -i "$current_content" "$AUTOMATOR_WORKFLOW_PATH" 
 
         # Update the previous clipboard content
         previous_content="$current_content"
