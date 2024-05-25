@@ -1,10 +1,8 @@
 -- Get the currennt working directory
 set currentDir to do shell script "pwd"
--- log currentDir
 
 -- Path to the .env file in the current directory
 set envFilePath to currentDir & "/.env"
--- log envFilePath
 
 -- Command to source the .env file and set:
 -- >> path to the Python script to execute 
