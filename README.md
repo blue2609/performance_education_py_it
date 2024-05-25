@@ -7,6 +7,7 @@
 			- [Environment Variables Setup](#environment-variables-setup)
 				- [`.zshrc` Variables Setup](#zshrc-variables-setup)
 				- [`.env` Variables Setup](#env-variables-setup)
+		- [Running this tool](#running-this-tool)
 
 # Overview
 
@@ -65,6 +66,16 @@ These are the value that will used to replace the original string `student_no`, 
 ##### `.env` Variables Setup
 
 Please copy the content of `.env.example` file, rename it to `.env` and replace the values set for each variable to the right one based on your project setting on your local machine
+
+### Running this tool
+
+Currently, this tool needs to be run as a background process by executing this command below from the root directory of the project:
+
+```shell
+./monitor_clipboard.sh &
+```
+
+
 
 
 
